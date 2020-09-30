@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>Solar Future</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Solar Future informative website">
+    <meta name="keywords" content="Solar, Sustaiability, Technology, Innovation">
+    <meta name="author" content="Danila Khomenko">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Stylesheets & Scripts-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@800&display=swap" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/stylesThermal.css">
+  </head>
+  <body>
+    <!--Main content start-->
+    <div class="mainApp">
+      <section>
+        <!--Top NavBar Start-->
+        <div class="topNav">
+          <nav>
+            <ul>
+              <li>
+                <!--Navigation link #1-->
+                <a class="topNavButton" href="theIssue.html">THE ISSUE</a>
+              </li>
+              <li>
+                <!--Drop-down menu #1-->
+                <div class="dropdown">
+                  <!--Navigation link #2-->
+                  <a class="topNavButton dropbtn" href="solar.html">SOLAR ●</a>
+                  <div class="dropdown-content">
+                    <!--Drop-down menu content-->
+                    <a href="solar.html#solarSection">Content</a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <!--Drop-down menu #2-->
+                <div class="dropdown">
+                  <!--Navigation link #3-->
+                  <a class="topNavButton dropbtn activeLink" href="thermal.html">THERMAL ●</a>
+                  <!--Drop-down menu content-->
+                  <div class="dropdown-content">
+                    <a href="#thermalSection">Content</a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <!--Navigation link #4-->
+                <a class="topNavButton" href="aboutUs.html">ABOUT</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <!--Top NavBar End-->
+
+        <!--Side NavBar Start-->
+        <!-- Collapsed sidebar & internal hyperlinks -->
+        <div id="mySidebar" class="sidebar">
+          <!-- Sidebar close button -->
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <!-- Sidebar internal links-->
+          <a href="index.html">Home</a>
+          <a class="sidebarTopNavLink" href="theIssue.html">The Issue</a>
+          <a class="sidebarTopNavLink" href="solar.html">Solar</a>
+          <a class="sidebarTopNavLink" href="aboutUs.html">About Us</a>
+        </div>
+        <!-- Sidebar expand button -->
+        <button class="openbtn" id="sideNavBtn" onclick="openNav()">&#9776;</button>
+        <!--Side NavBar End-->
+
+        <!--Image Carousel Start-->
+        <header>
+          <div id="titleContent">
+            <!--Website logo-->
+            <a href="index.html"><img src='assets/images/optimized/index/logo1.png' id="logo"></img></a>
+            <!--Image carousel bottom status indicators-->
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner" role="listbox">
+                <!-- Slide One - Set the background image for this slide in the line below -->
+                <div class="carousel-item active" style="background-image:
+                url('https://media.npr.org/assets/img/2016/02/04/gettyimages-508336438_custom-178c0ade09a8b5b2b29e2b79ee8316770e2518a5.jpg')">
+                  <div class="carousel-caption d-md-block">
+                    <!--Slide description-->
+                    <h2 class="display-4" id="title">Thermal Energy Solutions</h2>
+                    <!--Slide description-->
+                    <div class="slideDescription">
+                      <h2 class="display-4">Did you know?</h2>
+                      <p class="lead">In 2016, Morocco officially turned on a massive solar thermal power plant in the Sahara Desert, kicking off the first phase of a planned project to provide renewable energy to more than a million Moroccans.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Slide Two - Set the background image for this slide in the line below -->
+                <div class="carousel-item" style="background-image:
+                url('https://i0.wp.com/nbn.media/wp-content/uploads/2017/08/Solar-Thermal-Power-Plant.jpg?fit=2000%2C1333&ssl=1')">
+                  <div class="carousel-caption d-md-block">
+                    <!--Slide description-->
+                    <div class="slideDescription">
+                      <h2 class="display-4">Did you know?</h2>
+                      <p class="lead">The Quaid-e-Azam Solar Power Park is a $130 million project in the Cholistan desert in Punjab. It is capable of producing 160 megawatt electricity - enough to supply hundreds of thousands of local citizens with clean energy.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Slide Three - Set the background image for this slide in the line below -->
+                <div class="carousel-item" style="background-image:
+                url('https://www.dlr.de/content/en/images/institutes/institute-of-solar-research/parabolrinnenanlage.jpg?__blob=normal&v=12__ifc1920w')">
+                  <div class="carousel-caption d-md-block">
+                    <!--Slide description-->
+                    <div class="slideDescription">
+                      <h2 class="display-4">Did you know?</h2>
+                      <p class="lead">Solar thermal energy is primarily used domestically for space heating, hot water, and in some cases air conditioning. Solar thermal energy is renewable and no fuels are required during the process to generate electricity.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--Image carousel side control buttons-->
+              <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+        </header>
+      </section>
+      <!--Content section start-->
+      <section id="thermalSection" class="contentSection">
+        <div class="box">
+          <!--Text box #1-->
+          <div class="contentBox1">
+            <h2>What is thermal energy and how can it be used?</h2>
+            <p>Solar energy is not always used to generate electricity. In some scenarios, it can be converted into thermal (heat) energy which has a variety of unique uses on its own. Among the most common devices used to capture solar energy and convert it to thermal energy are flat-plate collectors, which are used for solar heating applications. The most widely used flat-plate collectors consist of a blackened metal plate, covered with one or two sheets of glass, that is heated by the sunlight falling on it. This heat is then transferred to air or water, called carrier fluids, that flow past the back of the plate.  The heat may be used directly, or it may be transferred to another medium for storage. Flat-plate collectors are commonly used for solar water heaters and house heating. Such a system can supply a home with hot water drawn from the storage tank, or, with the warmed water flowing through tubes in floors and ceilings, it can provide space heating.
+            </p>
+          </div>
+          <!--Text box #2-->
+          <div class="contentBox2">
+            <h2>Benefits of solar heating:</h2>
+            <p>Using a solar water heating system has a range of advantages over the traditional electrical and gas-based solutions. The first and most lucrative benefit is reduced energy bills. Sunlight is free, so once you've paid for the initial installation fees, your hot water costs will be significantly reduced. The second advantage is flexibility. Solar heating can be easily integrated into the existing water heating systems, thereby making your hot water supply fully independent from the weather conditions (e.g. in winter). The third advantage is sustainability. Solar heating systems produce zero net emission of greenhouse gases, and can significantly reduce our consumption of fossil fuels.
+            </p>
+          </div>
+          <!--Text box #3-->
+          <div class="contentBox3">
+            <h2>Limitations of solar heating:</h2>
+            <p>Despite the advantages of solar heating systems, there are still factors to consider when deciding to switch to solar. As with the benefits, most of the drawbacks of solar thermal overlap with those of solar energy.  The first disadvantage is its cost. Like solar panels, the installation of solar hot water systems is relatively expensive and should be viewed as a serious long-term investment. The second drawback is the efficiency. It is obvious that there will be less solar energy available in winter, which correlates with the availability of hot water during the colder months. Another important consideration is the space usage. This is especially important when integrating a solar heating system with an existing one.
+            </p>
+          </div>
+          <!--Img box #2-->
+          <div class="imgBox1">
+            <!--Img #1-->
+            <img src="assets/images/optimized/thermal/thermal1.jpeg" alt="Solar thermal collectors">
+          </div>
+          <!--Img box #2-->
+          <div class="imgBox2">
+            <!--Img #2-->
+            <img src="assets/images/optimized/thermal/thermal2.jpg" alt="Solar thermal heating diagram">
+          </div>
+        </div>
+      </section>
+      <!--Content section end-->
+
+      <!--External JS file-->
+      <script src="js/app.js"></script>
+      <script>
+        window.onload = function(){
+          // Indexes of slides with dark background
+          var whiteSlideIndexArray = [1,2];
+          // Indexes of slides there top Nav should have constrasted background box
+          var backgroundConstrastSlideIndexArray = [];
+          // Initialise the index variables within the local starage
+          localStorage.setItem("whiteContrastSlideIndexes", JSON.stringify(whiteSlideIndexArray));
+          localStorage.setItem("backgroundConstrastSlideIndexes", JSON.stringify(backgroundConstrastSlideIndexArray));
+          // Set colors for the top Navbar of the title page
+          setContrastPageIndexes();
+          setNavBarBackground();
+          }
+      </script>
+    </div>
+    <!--Main content end-->
+  </body>
+</html>

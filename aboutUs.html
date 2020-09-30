@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>Solar Future</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Solar Future informative website">
+    <meta name="keywords" content="Solar, Sustaiability, Technology, Innovation">
+    <meta name="author" content="Danila Khomenko">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Stylesheets & Scripts-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@800&display=swap" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/stylesAboutUs.css">
+  </head>
+  <body>
+    <!--Main content start-->
+    <div class="mainApp">
+      <!--Content section Start-->
+      <section>
+        <!--Top NavBar Start-->
+        <div class="topNav">
+          <nav>
+            <ul>
+              <li>
+                <!--Navigation link #1-->
+                <a class="topNavButton" href="theIssue.html">THE ISSUE</a>
+              </li>
+              <li>
+                <!--Drop-down menu #1-->
+                <div class="dropdown">
+                  <!--Navigation link #2-->
+                  <a class="topNavButton dropbtn" href="solar.html">SOLAR ●</a>
+                  <div class="dropdown-content">
+                    <!--Drop-down menu content-->
+                    <a href="solar.html#solarSection">Content</a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <!--Drop-down menu #2-->
+                <div class="dropdown">
+                  <!--Navigation link #3-->
+                  <a class="topNavButton dropbtn" href="thermal.html">THERMAL ●</a>
+                  <!--Drop-down menu content-->
+                  <div class="dropdown-content">
+                    <a href="thermal.html#thermalSection">Content</a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <!--Navigation link #4-->
+                <a class="topNavButton activeLink" href="#">ABOUT</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <!--Top NavBar End-->
+
+        <!--Side NavBar Start-->
+        <!-- Collapsed sidebar & internal hyperlinks -->
+        <div id="mySidebar" class="sidebar">
+          <!-- Sidebar close button -->
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <!-- Sidebar internal links-->
+          <a href="index.html">Home</a>
+          <a class="sidebarTopNavLink" href="theIssue.html">The Issue</a>
+          <a class="sidebarTopNavLink" href="solar.html">Solar</a>
+          <a class="sidebarTopNavLink" href="thermal.html">Thermal</a>
+        </div>
+        <!-- Sidebar expand button -->
+        <button class="openbtn" id="sideNavBtn" onclick="openNav()">&#9776;</button>
+        <!--Side NavBar End-->
+
+        <!--Image Carousel Start-->
+        <header>
+          <div id="titleContent">
+            <!--Website logo-->
+            <a href="index.html"><img src='assets/images/optimized/index/logo1.png' id="logo"></img></a>
+            <!--Image carousel bottom status indicators-->
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              </ol>
+              <div class="carousel-inner" role="listbox">
+                <!-- Slide One - Set the background image for this slide in the line below -->
+                <div class="carousel-item active" style="background-image:
+                url('https://wallup.net/wp-content/uploads/2017/03/28/433699-nature-landscape-trees-forest-China-solar_power-power_plant-panels-mountains-hills-Sun-clouds-sun_rays-road.jpg')">
+                  <div class="carousel-caption d-md-block">
+                    <!--Slide description-->
+                    <h2 class="display-4" id="title">About Us</h2>
+                    <div class="slideDescription">
+                      <h2 class="display-4">Quote of the day</h2>
+                      <p class="lead">"Progress is impossible without change; and those who cannot change thier minds cannot change anything." <br><br><b>-George Bernard Shaw-</b></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+      </section>
+      <!--Content section start-->
+      <section id="theIssueSection" class="contentSection">
+        <div class="box">
+          <!--Text box #1-->
+          <div class="contentBox">
+            <h2>So, what's out story?</h2>
+            <p>Our company, the Solar Future, is a nonprofit organisation based around the energy and environmental industries. At Solar Future, our mission is to raise awareness about the benefits of harnessing and utilizing solar energy among the members of society. We are strongly passionate when it comes to technological innovation, as well as preservation of the natural environment for the future generations. We believe that many of the energy development methods currently employed around  the world have become obsolete and damaging to the environment. Burning of fossil fuels like coal, oil, and gas for electricity, heat, and transportation is no longer a viable option in the long-term perspective. These natural resources are finite and will not sustain us indefinitely. Their usage also entails a burden in the form of an increased production of greenhouse gases such Carbon dioxide and Carbon monoxide that actively contribute to Global Climate Change. For this reason, we promote newer power generation methods that are aimed at harnessing useful energy directly from the Sun. The energy from the Sun’s radiation is the most abundant energy source available on Earth. With just one hour of direct sunlight, you could collect enough energy to generate a year’s worth of power for the entire Earth! Solar panels, Lithium batteries, and solar thermal collectors are the very technologies that make this possible. These have been refined through decades of scientific research and development, and we believe are now ready to become the primary means of energy generation on our planet. At Solar Future, our goal is to promote this shift within society and to ensure a brighter, long-term future for its members and the many generations ahead.
+            </p>
+          </div>
+          <!--Img box #1-->
+          <div class="imgBox">
+            <!--Img #1-->
+            <img src="assets/images/optimized/aboutUs/aboutUs1.jpg" alt="Solar panels and wind generators">
+          </div>
+        </div
+      </section>
+      <!--Content section end-->
+
+      <!--External JS file-->
+      <script src="js/app.js"></script>
+      <!--Initialise topNav colors-->
+      <script>
+      window.onload = function(){
+        // Indexes of slides with dark background
+        var whiteSlideIndexArray = [];
+        // Indexes of slides there top Nav should have constrasted background box
+        var backgroundConstrastSlideIndexArray = [];
+        // Initialise the index variables within the local starage
+        localStorage.setItem("whiteContrastSlideIndexes", JSON.stringify(whiteSlideIndexArray));
+        localStorage.setItem("backgroundConstrastSlideIndexes", JSON.stringify(backgroundConstrastSlideIndexArray));
+        // Set colors for the top Navbar of the title page
+        setContrastPageIndexes();
+        setNavBarBackground();
+        setNavBarColor();
+        }
+      </script>
+    </div>
+    <!--Main content end-->
+  </body>
+</html>

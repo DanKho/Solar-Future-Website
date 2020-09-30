@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>Solar Future</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Solar Future informative website">
+    <meta name="keywords" content="Solar, Sustaiability, Technology, Innovation">
+    <meta name="author" content="Danila Khomenko">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Stylesheets & Scripts-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@800&display=swap" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/stylesMain.css">
+  </head>
+  <!--Main content end-->
+  <body>
+    <a href="index.html"><img src='assets/images/optimized/index/logo1.png' id="logo"></img></a>
+    <!--Top NavBar Start-->
+    <div class="topNav">
+      <nav>
+        <ul>
+          <li>
+            <!--Navigation link #1-->
+            <a class="topNavButton" href="theIssue.html" onclick="javascript: window.location.reload()">THE ISSUE</a>
+          </li>
+          <li>
+            <!--Drop-down menu #1-->
+            <div class="dropdown">
+              <!--Navigation link #2-->
+              <a class="topNavButton dropbtn" href="solar.html">SOLAR ●</a>
+              <div class="dropdown-content">
+                <!--Drop-down menu content-->
+                <a href="solar.html#solarSection">Content</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <!--Drop-down menu #2-->
+            <div class="dropdown">
+              <!--Navigation link #3-->
+              <a class="topNavButton dropbtn" href="thermal.html">THERMAL ●</a>
+              <!--Drop-down menu content-->
+              <div class="dropdown-content">
+                <a href="thermal.html#thermalSection">Content</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <!--Navigation link #4-->
+            <a class="topNavButton" href="aboutUs.html">ABOUT</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!--Top NavBar End-->
+    <!--Side NavBar Start-->
+    <!-- Collapsed sidebar & internal hyperlinks -->
+    <div id="mySidebar" class="sidebar">
+      <!-- Sidebar close button -->
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <!-- Sidebar internal links-->
+      <a class="sidebarTopNavLink" href="theIssue.html">The Issue</a>
+      <a class="sidebarTopNavLink" href="solar.html">Solar</a>
+      <a class="sidebarTopNavLink" href="thermal.html">Thermal</a>
+      <a class="sidebarTopNavLink" href="aboutUs.html">About Us</a>
+    </div>
+    <!-- Sidebar expand button -->
+    <button class="openbtn" id="sideNavBtn" onclick="openNav()">&#9776;</button>
+    <!--Side NavBar End-->
+
+    <!--Image Carousel Start-->
+    <header>
+      <!--Image carousel bottom status indicators-->
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <!--Carousel current index indicators-->
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+          <!-- Slide One - Set the background image for this slide in the line below -->
+          <div class="carousel-item active" style="background-image:
+          url('https://9to5mac.com/wp-content/uploads/sites/6/2019/07/solar-power.jpg?quality=82&strip=all')">
+            <div class="carousel-caption d-md-block">
+              <!--Slide description-->
+              <h2 class="display-4" id="title">Leading The World Into A Brighter <br> Future</h2>
+              <p class="lead"></p>
+              <div class="slideDescription">
+                <h2 class="display-4">Did you know?</h2>
+                <p class="lead"> Solar energy from the sun can be harnessed with some modern technology like photovoltaic cells, solar heating, artificial photosynthesis, and solar thermal electricity.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Slide Two - Set the background image for this slide in the line below -->
+          <div class="carousel-item" style="background-image:
+          url('https://images.pexels.com/photos/325944/pexels-photo-325944.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260')">
+            <div class="carousel-caption d-md-block">
+              <!--Slide description-->
+              <div class="slideDescription">
+                <h2 class="display-4">Did you know?</h2>
+                <p class="lead"> With new advancements in scientific research, solar energy could be more affordable in the future with decreasing costs and increasing efficiency.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Slide Three - Set the background image for this slide in the line below -->
+          <div class="carousel-item" style="background-image:
+          url('https://images.pexels.com/photos/247600/pexels-photo-247600.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260')">
+            <div class="carousel-caption d-md-block">
+              <!--Slide description-->
+              <div class="slideDescription">
+                <h2 class="display-4">Did you know?</h2>
+                <p class="lead">Solar energy is recognized as the future of alternative energy sources as it is non-polluting and helps combat the Greenhouse effect on the global climate created by the use of fossils fuels.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Image carousel side control buttons-->
+        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </header>
+
+    <!--External JS file-->
+    <script src="js/app.js"></script>
+    <script>
+      window.onload = function(){
+        // Indexes of slides with dark background
+        var whiteSlideIndexArray = [1];
+        // Initialise the index variables within the local starage
+        var backgroundConstrastSlideIndexArray = [];
+        localStorage.setItem("whiteContrastSlideIndexes", JSON.stringify(whiteSlideIndexArray));
+        localStorage.setItem("backgroundConstrastSlideIndexes", JSON.stringify(backgroundConstrastSlideIndexArray));
+        // Set colors for the top Navbar of the title page
+        setContrastPageIndexes();
+        setNavBarBackground();
+        }
+    </script>
+    <!--Main content end-->
+  </body>
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>Solar Future</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Solar Future informative website">
+    <meta name="keywords" content="Solar, Sustaiability, Technology, Innovation">
+    <meta name="author" content="Danila Khomenko">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Stylesheets & Scripts-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@800&display=swap" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/stylesSolar.css">
+  </head>
+  <body>
+    <!--Main content start-->
+    <div class="mainApp">
+      <!--Content section Start-->
+      <section>
+        <!--Top NavBar Start-->
+        <div class="topNav">
+          <nav>
+            <ul>
+              <li>
+                <!--Navigation link #1-->
+                <a class="topNavButton" href="theIssue.html">THE ISSUE</a>
+              </li>
+              <li>
+                <!--Drop-down menu #1-->
+                <div class="dropdown">
+                  <!--Navigation link #2-->
+                  <a class="topNavButton dropbtn activeLink" href="solar.html">SOLAR ●</a>
+                  <div class="dropdown-content">
+                    <!--Drop-down menu content-->
+                    <a href="#solarSection">Content</a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <!--Drop-down menu #2-->
+                <div class="dropdown">
+                  <!--Navigation link #3-->
+                  <a class="topNavButton dropbtn" href="thermal.html">THERMAL ●</a>
+                  <!--Drop-down menu content-->
+                  <div class="dropdown-content">
+                    <a href="thermal.html#thermalSection">Content</a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <!--Navigation link #4-->
+                <a class="topNavButton" href="aboutUs.html">ABOUT</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <!--Top NavBar End-->
+
+        <!--Side NavBar Start-->
+        <!-- Collapsed sidebar & internal hyperlinks -->
+        <div id="mySidebar" class="sidebar">
+          <!-- Sidebar close button -->
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <!-- Sidebar internal links-->
+          <a href="index.html">Home</a>
+          <a class="sidebarTopNavLink" href="theIssue.html">The Issue</a>
+          <a class="sidebarTopNavLink" href="thermal.html">Thermal</a>
+          <a class="sidebarTopNavLink" href="aboutUs.html">About Us</a>
+        </div>
+        <!-- Sidebar expand button -->
+        <button class="openbtn" id="sideNavBtn" onclick="openNav()">&#9776;</button>
+        <!--Side NavBar End-->
+
+        <!--Image Carousel Start-->
+        <header>
+          <div id="titleContent">
+            <!--Website logo-->
+            <a href="index.html"><img src='assets/images/optimized/index/logo1.png' id="logo"></img></a>
+            <!--Image carousel bottom status indicators-->
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner" role="listbox">
+                <!-- Slide One - Set the background image for this slide in the line below -->
+                <div class="carousel-item active" style="background-image:
+                url('https://9to5mac.com/wp-content/uploads/sites/6/2019/07/solar-power.jpg?quality=82&strip=all')">
+                  <div class="carousel-caption d-md-block">
+                    <!--Slide description-->
+                    <h2 class="display-4" id="title">Solar Energy Solutions</h2>
+                    <div class="slideDescription">
+                      <h2 class="display-4">Did you know?</h2>
+                      <p class="lead"> The energy from the sun is the most abundant energy source available on Earth. With just one hour of direct sunlight, you could collect enough energy to generate a year’s worth of power for the entire Earth.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Slide Two - Set the background image for this slide in the line below -->
+                <div class="carousel-item" style="background-image:
+                url('https://cleantechnica.com/files/2019/03/tesla-solar-roof-tiles-energy-powerwall-smooth-glass-model-3.jpg')">
+                  <div class="carousel-caption d-md-block">
+                    <div class="slideDescription">
+                      <!--Slide description-->
+                      <h2 class="display-4">Did you know?</h2>
+                      <p class="lead">The Tesla Solar Roof is a product aimed at replacing your existing house roof with an array of miniature solar tiles capable of generating clean electricity for your household for decades.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Slide Three - Set the background image for this slide in the line below -->
+                <div class="carousel-item" style="background-image:
+                url('https://www.tesla.com/sites/default/files/blog/megapack-announcement.jpg?')">
+                  <div class="carousel-caption d-md-block">
+                    <!--Slide description-->
+                    <div class="slideDescription">
+                      <h2 class="display-4">Did you know?</h2>
+                      <p class="lead">In 2017, Tesla built and installed the world’s largest lithium-ion battery in Hornsdale, South Australia. Since then, the facility saved nearly $40 million in its first year alone and helped to stabilize and balance the region’s unreliable grid.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--Image carousel side control buttons-->
+              <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+        </header>
+      </section>
+      <section id="solarSection" class="contentSection">
+        <div class="box">
+          <!--Text box #1-->
+          <div class="contentBox1">
+            <h2>What is solar energy and how is it utilised?</h2>
+            <p>Solar power generation refers to capturing the energy from the Sun and subsequently converting it into electricity. The energy, heat, and light from the sun flow away in the form of electromagnetic radiation (EMR). We can then use that electricity to light up our homes, streets, and businesses, and even to power out cars. The total amount of solar energy incident on Earth is vastly in excess of the world’s current and anticipated energy requirements. If suitably harnessed, this highly diffused source has the potential to satisfy all future energy needs. In the 21st century solar energy is expected to become increasingly attractive as a renewable energy source because of its inexhaustible supply and its nonpolluting character, in stark contrast to the finite fossil fuels coal, petroleum, and natural gas. The potential for solar energy is enormous, since about 200,000 times the world’s total daily electric-generating capacity is received by Earth every day in the form of solar energy. Solar radiation can be converted either into thermal energy (heat) or into electrical energy, though the former is easier to accomplish.
+            </p>
+          </div>
+          <!--Img box #1-->
+          <div class="imgBox1">
+            <img src="assets/images/optimized/solar/solar1.jpg" alt="Solar panels">
+          </div>
+          <!--Text box #2-->
+          <div class="contentBox2">
+            <h2>Ways of collecting solar energy</h2>
+            <p>Solar radiation may be converted directly into electricity by solar (photovoltaic) cells. Each photovoltaic cell resembles a sandwich made up of two slices of semiconducting material, usually silicon. A small electric voltage is generated when light strikes the junction between two semiconductors. The power generated by a single photovoltaic cell is typically only about two watts.  By connecting large numbers of individual cells together, as in solar-panel arrays, hundreds or even thousands of kilowatts of power can be generated. Depending on the quantity, efficiency, and arrangement of the solar cells, you can power appliances as small as a solar-powered calculator or as large as a full-scale power station.
+            </p>
+          </div>
+          <!--Img box #2-->
+          <div class="imgBox2">
+            <!--Img #1-->
+            <img src="assets/images/optimized/solar/solar2.gif" id="img1" alt="Solar panel diagram">
+            <!--Img #2-->
+            <img src="assets/images/optimized/solar/solar3.jpg" id="img2" alt="Solar panel array">
+          </div>
+        </div>
+      </section>
+      <!--Content section end-->
+
+      <!--External JS file-->
+      <script src="js/app.js"></script>
+      <!--Initialise topNav colors-->
+      <script>
+        window.onload = function(){
+          // Indexes of slides with dark background
+          var whiteSlideIndexArray = [1];
+          // Indexes of slides there top Nav should have constrasted background box
+          var backgroundConstrastSlideIndexArray = [];
+          // Initialise the index variables within the local starage
+          localStorage.setItem("whiteContrastSlideIndexes", JSON.stringify(whiteSlideIndexArray));
+          localStorage.setItem("backgroundConstrastSlideIndexes", JSON.stringify(backgroundConstrastSlideIndexArray));
+          // Set colors for the top Navbar of the title page
+          setContrastPageIndexes();
+          setNavBarBackground();
+          }
+      </script>
+    </div>
+    <!--Main content end-->
+  </body>
+</html>

@@ -1,0 +1,583 @@
+/* Style configurations for all elements */
+* {
+  box-sizing: border-box;
+}
+
+/* Style configurations for the website's body elements*/
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Style configurations for the mainApp container hosting the website's content*/
+.mainApp {
+  /* Add a side scroll bar */
+  overflow-y: scroll;
+  overflow-x: hidden;
+  /* Make the content take up the entire viewport */
+  height: 100vh;
+  /* Automatically scroll to each <section>*/
+  scroll-snap-type: y mandatory;
+}
+
+.sidebar .sidebarTopNavLink{
+  visibility: hidden;
+}
+
+/* Style configurations for section elements*/
+section {
+  /* make the section take up the entire viewport */
+  height: 100vh;
+  /* Make the page utomatically scroll to each <section> */
+  scroll-snap-align: start;
+  position: relative;
+}
+
+/* Style for website logo */
+#logo {
+  position: absolute;
+  z-index: 2;
+  width: 80px;
+}
+
+/* Style for top navigation bar and all its child elements */
+.topNav{
+  width: 100vw;
+  height: 50px;
+  padding: 0 100px;
+  align-items: center;
+  overflow: visible;
+  display: flex;
+  justify-content: center;
+  z-index: 1 ;
+  position: absolute;
+}
+
+
+/* Style for <a> elements within the top navigation bar */
+.topNav a {
+  padding: 14px 24px;
+  text-decoration: none;
+  /* width:100vw; */
+  overflow: hidden;
+  color: black;
+  font-size: 18px;
+  font-family: 'Mulish', sans-serif;
+  font-weight: bold;
+  position: relative;
+  border: 10px;
+  /* margin: 0 1.5vw; */
+}
+
+/* Style for <ul> elements within the top navigation bar */
+.topNav ul{
+  margin: 0;
+  padding: 0;
+  display: inline-flex;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+}
+
+/* Style for <li> elements within the top navigation bar */
+.topNav ul li{
+  list-style-type: none;
+  padding-top: 1vw;
+  margin: 0 auto;
+}
+
+/* Style for the animated topNav button underline */
+.topNav a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 1;
+  content: "";
+  display: block;
+  height: 3px;
+  left: 50%;
+  position: absolute;
+  background: red;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+/* Generate the underline upon user's hover action */
+.topNav a:hover:after{
+  width: 100%;
+  left: 0;
+}
+
+/* Underline the active link within the top nav Bar */
+.topNav a.activeLink:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 1;
+  content: "";
+  display: block;
+  height: 3px;
+  left: 0;
+  position: absolute;
+  background: red;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 100%;
+}
+
+/* Style configurations for content text boxes */
+.titleContent .box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 96vw;
+  background-color: yellow;
+  height: 90vh;
+  /* Make the box centered */
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  display: flex;
+}
+
+/* Style configurations for the page's title */
+#title {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 480px;
+  width: 70vw;
+}
+
+/* Dropdown Button */
+.dropbtn {
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  float: left;
+  position: relative;
+  /* overflow: hidden; */
+  display: inline-block;
+  z-index: 1;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  position: absolute;
+  display: none;
+  background-color: white;
+  width: 100%;
+  margin-top: 5px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  text-decoration: none;
+  display: block;
+  font-size: 18px;
+  padding: 14px 14px;
+  position: relative;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  /* background-color: red; */
+}
+
+/* Style for the carousel images */
+.carousel-item {
+  height: 100vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* Style for the carousel captions */
+.carousel-caption {
+  width: 100%;
+  height: 100%;
+  left: 0;
+  padding-top: 10vh;
+}
+
+/* Style for the carousel caption text */
+.carousel-caption h2, p{
+  font-size: 35px;
+  font-family: 'Mulish', sans-serif;
+  font-weight: bold;
+  color: black;
+}
+
+/* Style configurations for the "Did you know?" paragraph */
+.slideDescription {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.7);
+  top: 41vh;
+  left: 12vw;
+  width: 290px;
+  padding: 10px 10px 0px 10px;
+}
+
+.slideDescription h2 {
+  font-size: 30px;
+}
+
+/* The sidebar menu */
+.sidebar {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 200; /* Stay on top */
+  top: 0;
+  right:0;
+  background-color: black;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+}
+
+/* The sidebar links */
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* The button used to open the sidebar */
+.openbtn {
+  font-size: 30px;
+  font-weight: bolder;
+  cursor: pointer;
+  background-color: transparent;
+  color: black;
+  position: absolute;
+  z-index: 100;
+  right: 0.8%;
+  top: 0.7%;
+  padding: 0;
+  border: none;
+}
+
+/* Remove outline from the button once in focus */
+.openbtn:focus {
+  outline: 0;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+/* Style configurations for the content section */
+#thermalSection {
+  background-image: url('https://wallpaperaccess.com/full/449940.jpg');
+  /* background-color: yellow; */
+  height: 100vh;
+}
+
+/* Style configurations for the content box */
+.contentSection .box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 96vw;
+  height: 90vh;
+  /* Make the box centered */
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  display: flex;
+}
+
+/* If the screen size is 1400px wide or more, do: */
+@media screen and (min-width: 1400px) {
+  /* Style configurations for the content images */
+  .contentSection .box .imgBox1 img {
+    max-width: 100%;
+    position: absolute;
+    right: 19%;
+    top: 23%;
+    transform: translate(+50%, -50%);
+    width: 29%;
+  }
+
+  .contentSection .box .imgBox2 img {
+    max-height: 55%;
+    position: absolute;
+    right: 19%;
+    top: 75%;
+    transform: translate(50%, -50%);
+    width: 29%;
+  }
+
+  /* Style configurations for the content text box */
+  .contentSection .box .contentBox1 {
+    position: inherit;
+    left: 32%;
+    top: 23%;
+    transform: translate(-50%, -50%);
+    width: 57%;
+  }
+
+  .contentSection .box .contentBox2 {
+    position: inherit;
+    left: 17%;
+    top: 74%;
+    transform: translate(-50%, -50%);
+    width: 27%;
+  }
+
+  .contentSection .box .contentBox3 {
+    position: inherit;
+    left: 47%;
+    top: 74%;
+    transform: translate(-50%, -50%);
+    width: 27%;
+  }
+
+  .contentSection .box h2 {
+    font-size: 1.8vw;
+    font-family: 'Mulish', sans-serif;
+    font-weight: bold;
+    text-align: left;
+  }
+
+  .contentSection .box p {
+    font-size: 1vw;
+    font-family: 'Arial', sans-serif;
+  }
+}
+
+/* If the screen size is 1399px wide or less, do: */
+@media screen and (max-width: 1399px) {
+  .contentSection .box {
+    display: flex;
+    flex-direction: column;
+    /* background: green; */
+    height: 100%;
+    overflow: auto;
+    /* height: max-content; */
+  }
+
+  .contentSection .box .imgBox1 {
+    text-align: center;
+    position: relative;
+    margin-top: 4%;
+    order: 2;
+  }
+
+  .contentSection .box .imgBox2 {
+    text-align: center;
+    position: relative;
+    margin-top: 4%;
+    margin-bottom: 2vh;
+    order: 5;
+  }
+
+  .contentSection .box .imgBox1 img {
+    width: 50vw;
+    margin-bottom: 2vh;
+  }
+
+  .contentSection .box .imgBox2 img {
+    width: 50vw;
+    margin-bottom: 2vh;
+  }
+
+  .contentSection .box .contentBox1 {
+    position: relative;
+    margin: 0 auto;
+    width: 75vw;
+    top: 4%;
+    order: 1;
+  }
+
+  .contentSection .box .contentBox2 {
+    position: relative;
+    margin: 0 auto;
+    margin-top: 2vh;
+    width: 70vw;
+    top: 4%;
+    order: 3;
+  }
+
+  .contentSection .box .contentBox3 {
+    position: relative;
+    margin: 0 auto;
+    margin-top: 5vh;
+    width: 70vw;
+    top: 4%;
+    order: 4;
+  }
+
+  .contentSection .box h2 {
+    font-size: 2.5vw;
+    font-family: 'Mulish', sans-serif;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .contentSection .box p {
+    font-size: 1.5vw;
+    font-family: 'Arial', sans-serif;
+  }
+
+  .contentSection{
+    /* background-image: url('https://wallpaperaccess.com/full/449940.jpg'); */
+    overflow: scroll;
+  }
+
+  /* Hide content Section's scrollbar */
+  .contentSection .box::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide content Section's scrollbar */
+  .contentSection::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* If the screen size is 1000px wide or less, do: */
+@media screen and (max-width: 1000px) {
+  .topNav a {
+    display: none;
+  }
+
+  .carousel-caption {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    padding-top: 5vh;
+  }
+
+  /* Show the links originally belonging to the top navBar within the side menu */
+  .sidebar .sidebarTopNavLink{
+    visibility: visible;
+  }
+
+  .contentSection .box .contentBox1 {
+    position: relative;
+    margin: 0 auto;
+    width: 85vw;
+    padding-bottom: 2%;
+    top: 4%;
+  }
+
+  .contentSection .box .contentBox2 {
+    position: relative;
+    margin: 0 auto;
+    width: 85vw;
+    padding-bottom: 2%;
+    top: 4%;
+  }
+
+  .contentSection .box .contentBox3 {
+    position: relative;
+    margin: 0 auto;
+    width: 85vw;
+    padding-bottom: 2%;
+    top: 4%;
+  }
+
+  .contentSection .box p {
+    font-size: 1.8vw;
+    font-family: 'Arial', sans-serif;
+  }
+
+  .contentSection .box .imgBox1 img {
+    width: 70vw;
+  }
+
+  .contentSection .box .imgBox2 img {
+    width: 75vw;
+    margin-bottom: 2vh;
+    margin-top: 1vh;
+  }
+}
+
+/* If the screen size is 700px wide or less, do: */
+@media screen and (max-width: 700px) {
+
+  .contentSection .box .contentBox1 {
+    position: relative;
+    margin: 0 auto;
+    padding-bottom: 2%;
+    width: 85vw;
+    top: 4%;
+  }
+
+  .contentSection .box .contentBox2 {
+    position: relative;
+    margin: 0 auto;
+    margin-top: 1vw;
+    padding-bottom: 2%;
+    width: 85vw;
+    top: 4%;
+  }
+
+  .contentSection .box .contentBox3 {
+    position: relative;
+    margin: 0 auto;
+    padding-bottom: 2%;
+    width: 85vw;
+    top: 4%;
+  }
+
+  .contentSection .box p {
+    font-size: 3vw;
+  }
+
+  .contentSection .box h2 {
+    font-size: 4vw;
+  }
+
+  .contentSection .box .imgBox1 img {
+    width: 85vw;
+    margin-top: 2vh;
+  }
+
+  .contentSection .box .imgBox2 img {
+    width: 90vw;
+    margin-bottom: 2vh;
+    margin-top: 2vh;
+  }
+}
+
+.pageIntro{
+  position: inherit;
+}
